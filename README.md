@@ -18,4 +18,6 @@ Underneath this, the option to download the extracted Gurmukhi text was also pre
 
 ![Gurmukhi OCR app screenshot_3](images/ss_3.png)
 
+Additionally, I created a function that cleaned the output text file by removing non-Gurmukhi characters.
 
+![Gurmukhi OCR app screenshot_4](images/ss_4.png)
