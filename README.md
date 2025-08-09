@@ -16,6 +16,6 @@ After the file was uploaded it went through preprocessing, which included Otsu's
 
 Underneath this, the option to download the extracted Gurmukhi text was also presented.
 
-![Gurmukhi OCR app screenshot_3](images/Screenshot 2025-08-09 at 2.10.56 AM.png)
+![Gurmukhi OCR app screenshot_3](images/ss_3.png)
 
 
