@@ -3,15 +3,6 @@ from PIL import Image
 import pytesseract
 import cv2
 import numpy as np
-import re
-
-def keep_only_gurmukhi(text):
-    # Regex to match all Gurmukhi characters (Unicode U+0A00 to U+0A7F) and whitespace/newlines
-    pattern = re.compile(r'[^\u0A00-\u0A7F\s\n]+')
-    
-    # Substitute anything not matching Gurmukhi or whitespace with empty string
-    cleaned_text = pattern.sub('', text)
-    return cleaned_text
 
 
 def preprocess_image(pil_img):
