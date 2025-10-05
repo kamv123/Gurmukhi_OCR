@@ -6,15 +6,12 @@ import numpy as np
 import re
 
 def preprocess_image(pil_img):
-    # Convert PIL Image to OpenCV grayscale image
     img = np.array(pil_img)
     if len(img.shape) == 3:
         img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
 
     # Apply Otsu's thresholding for binarization
     _, img = cv2.threshold(img, 150, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
-
-    # You can add more preprocessing here if needed (noise removal, dilation, etc.)
 
     # Convert back to PIL Image
     return Image.fromarray(img)
